@@ -1,0 +1,27 @@
+/* src/components/Home.css */
+.home {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.court-container {
+  margin-top: 2rem;
+  position: relative;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.basketball-court {
+  width: 100%;
+  height: auto;
+}
+
+.court-zone {
+  cursor: pointer;
+}
+
+.court-zone:hover {
+  fill: rgba(255, 183, 3, 0.2); /* Highlight on hover */
+}
