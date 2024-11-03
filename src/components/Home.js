@@ -1,131 +1,141 @@
 // src/components/Home.js
 import React from "react";
 import "./Home.css";
+import { useState } from "react";
+import ProjectsPopup from "./Projects";
+import ExperiencePopup from "./Experience";
+import "./popup.css";
 
 function Home() {
-  const navigateTo = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+  const [showProjects, setShowProjects] = useState(false);
+  const [showExperience, setShowExperience] = useState(false);
+
+  const navigateTo = (section) => {
+    if (section === "projects") {
+      setShowProjects(true);
+      setShowExperience(false);
+    } else if (section === "experience") {
+      setShowProjects(false);
+      setShowExperience(true);
     }
+  };
+
+  const closePopup = () => {
+    setShowProjects(false);
+    setShowExperience(false);
   };
 
   return (
     <section id="home" className="home">
-      <h2>Welcome to My Game Plan</h2>
-      <p>Click on different parts of the court to explore my portfolio!</p>
-
       <div className="court-container">
-        <svg viewBox="0 0 300 600" className="basketball-court">
-          {/* Main Court Rectangle */}
+        <svg viewBox="0 0 200 300" className="basketball-court">
           <rect
             x="10"
             y="10"
-            width="280"
-            height="580"
+            width="180"
+            height="280"
             fill="none"
             stroke="#333"
             strokeWidth="4"
           />
 
-          {/* Half Court Line */}
           <line
             x1="10"
-            y1="300"
-            x2="290"
-            y2="300"
+            y1="150"
+            x2="190"
+            y2="150"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Center Circle */}
           <circle
-            cx="150"
-            cy="300"
-            r="30"
+            cx="100"
+            cy="150"
+            r="28"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Top Three-Point Arc (Curving towards center circle) */}
           <path
-            d="M 50 100 A 140 140 0 0 0 250 100"
+            d="M 30 10 A 70 70 0 0 0 170 10"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Bottom Three-Point Arc (Curving towards center circle) */}
           <path
-            d="M 50 500 A 140 140 0 0 1 250 500"
+            d="M 30 290 A 70 70 0 0 1 170 290"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Top Paint Rectangle */}
           <rect
-            x="100"
+            x="70"
             y="10"
-            width="100"
-            height="120"
+            width="60"
+            height="55"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Bottom Paint Rectangle */}
           <rect
-            x="100"
-            y="410"
-            width="100"
-            height="180"
+            x="70"
+            y="235"
+            width="60"
+            height="55"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Top Key Circle */}
           <circle
-            cx="150"
-            cy="190"
-            r="30"
+            cx="100"
+            cy="65"
+            r="15"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
 
-          {/* Bottom Key Circle */}
           <circle
-            cx="150"
-            cy="410"
-            r="30"
+            cx="100"
+            cy="235"
+            r="15"
             fill="none"
             stroke="#333"
-            strokeWidth="4"
+            strokeWidth="2"
           />
-
-          {/* Clickable Zones */}
           <rect
             x="10"
             y="10"
-            width="280"
-            height="300"
+            width="180"
+            height="140"
             fill="transparent"
             onClick={() => navigateTo("projects")}
             className="court-zone"
           />
+
           <rect
             x="10"
-            y="300"
-            width="280"
-            height="300"
+            y="150"
+            width="180"
+            height="140"
             fill="transparent"
-            onClick={() => navigateTo("skills")}
+            onClick={() => navigateTo("experience")}
             className="court-zone"
           />
         </svg>
+        {/* Conditionally render the popups based on the state */}
+        {showProjects && <ProjectsPopup />}
+        {showExperience && <ExperiencePopup />}
+
+        {/* Close button for popups */}
+        {(showProjects || showExperience) && (
+          <button onClick={closePopup}>Close</button>
+        )}
       </div>
     </section>
   );
