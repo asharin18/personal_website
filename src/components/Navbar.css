@@ -1,11 +1,27 @@
 /* src/components/Navbar.css */
-.navbar {
+/* .navbar {
   background-color: #333;
   padding: 1rem;
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
+} */
+.navbar {
+  position: relative;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: url("../images/court-color.jpg") no-repeat center center; */
+  background: linear-gradient(
+      rgba(210, 180, 140, 0.7),
+      rgba(210, 180, 140, 0.7)
+    ),
+    url("../images/court-color.jpg") center/cover no-repeat;
+  background-size: cover;
+  /*note that the image isn't meant to be strentched like that*/
 }
 
 .navbar ul {
