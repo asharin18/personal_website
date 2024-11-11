@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.146e96f8.css",
-    "main.js": "/personal_website/static/js/main.73e4ab6b.js",
+    "main.css": "/personal_website/static/css/main.d52cbf5d.css",
+    "main.js": "/personal_website/static/js/main.83832be2.js",
     "static/js/453.8415880a.chunk.js": "/personal_website/static/js/453.8415880a.chunk.js",
+    "static/media/basketball-player.png": "/personal_website/static/media/basketball-player.7e318b50a67c6f4bbb44.png",
+    "static/media/coach.png": "/personal_website/static/media/coach.d0ad36bd5b80330c1ef9.png",
     "index.html": "/personal_website/index.html",
-    "main.146e96f8.css.map": "/personal_website/static/css/main.146e96f8.css.map",
-    "main.73e4ab6b.js.map": "/personal_website/static/js/main.73e4ab6b.js.map",
+    "main.d52cbf5d.css.map": "/personal_website/static/css/main.d52cbf5d.css.map",
+    "main.83832be2.js.map": "/personal_website/static/js/main.83832be2.js.map",
     "453.8415880a.chunk.js.map": "/personal_website/static/js/453.8415880a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.146e96f8.css",
-    "static/js/main.73e4ab6b.js"
+    "static/css/main.d52cbf5d.css",
+    "static/js/main.83832be2.js"
   ]
 }
