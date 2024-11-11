@@ -9,6 +9,7 @@ import LeadershipPopup from "./Leadership";
 import "./popup.css";
 import icon from "../images/basketball-player.png";
 import coach from "../images/coach.png";
+import Navbar from "./Navbar";
 
 function Home() {
   const [showProjects, setShowProjects] = useState(false);
@@ -49,6 +50,8 @@ function Home() {
 
   return (
     <section id="home" className="home">
+      {/* Pass navigateTo function to Navbar so can have same functionality */}
+      <Navbar navigateTo={navigateTo} />
       <div className="court-container">
         <img
           src={coach}
@@ -70,7 +73,7 @@ function Home() {
             y="10"
             width="180"
             height="280"
-            fill="none"
+            fill="tan"
             stroke="#333"
             strokeWidth="4"
           />
@@ -107,43 +110,43 @@ function Home() {
             strokeWidth="2"
           />
 
+          <circle
+            cx="100"
+            cy="60"
+            r="20"
+            fill="none"
+            stroke="#333"
+            strokeWidth="2"
+          />
+
+          <circle
+            cx="100"
+            cy="240"
+            r="20"
+            fill="none"
+            stroke="#333"
+            strokeWidth="2"
+          />
           <rect
-            x="70"
+            x="80"
             y="10"
-            width="60"
+            width="40"
             height="55"
-            fill="none"
+            fill="#d05757"
             stroke="#333"
             strokeWidth="2"
           />
 
           <rect
-            x="70"
+            x="80"
             y="235"
-            width="60"
+            width="40"
             height="55"
-            fill="none"
+            fill="#d05757"
             stroke="#333"
             strokeWidth="2"
           />
 
-          <circle
-            cx="100"
-            cy="65"
-            r="15"
-            fill="none"
-            stroke="#333"
-            strokeWidth="2"
-          />
-
-          <circle
-            cx="100"
-            cy="235"
-            r="15"
-            fill="none"
-            stroke="#333"
-            strokeWidth="2"
-          />
           <rect
             x="10"
             y="10"
