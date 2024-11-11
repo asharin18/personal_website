@@ -25,3 +25,12 @@
 .court-zone:hover {
   fill: rgba(255, 183, 3, 0.2); /* Highlight on hover */
 }
+
+.player-icon {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.player-icon:hover {
+  opacity: 0.7;
+}

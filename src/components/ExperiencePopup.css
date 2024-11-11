@@ -1,0 +1,58 @@
+/* Ensure the popup is centered and has padding */
+/* .popup {
+  width: 80%;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px auto;
+} */
+
+/* Container for the divs, use flexbox to line them up horizontally */
+.experience-tabs {
+  display: flex;
+  justify-content: flex-start; /* Align divs to the left */
+  gap: 20px; /* Space between divs */
+  margin-bottom: 20px; /* Adds some space below the divs */
+}
+
+/* Style for each clickable div */
+.experience-tab {
+  padding: 12px 25px;
+  font-size: 16px;
+  color: #333;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center; /* Centers text inside the div */
+}
+
+/* Hover effect for divs */
+.experience-tab:hover {
+  background-color: #e0e0e0;
+}
+
+/* Active div style */
+.experience-tab.active {
+  background-color: #d05757;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style for content below the divs */
+.experience-content {
+  font-size: 16px;
+  color: #333;
+}
+
+.experience-content h3 {
+  font-size: 20px;
+  color: #d05757;
+}
+
+.experience-content p {
+  color: #555;
+}

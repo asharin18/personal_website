@@ -4,30 +4,66 @@ import "./Home.css";
 import { useState } from "react";
 import ProjectsPopup from "./Projects";
 import ExperiencePopup from "./Experience";
+import AboutPopup from "./About";
+import LeadershipPopup from "./Leadership";
 import "./popup.css";
+import icon from "../images/basketball-player.png";
+import coach from "../images/coach.png";
 
 function Home() {
   const [showProjects, setShowProjects] = useState(false);
   const [showExperience, setShowExperience] = useState(false);
+  const [showAbout, setShowAbout] = useState(false);
+  const [showLeadership, setShowLeadership] = useState(false);
 
   const navigateTo = (section) => {
     if (section === "projects") {
       setShowProjects(true);
       setShowExperience(false);
+      setShowAbout(false);
+      setShowLeadership(false);
     } else if (section === "experience") {
       setShowProjects(false);
       setShowExperience(true);
+      setShowAbout(false);
+      setShowLeadership(false);
+    } else if (section === "about") {
+      setShowProjects(false);
+      setShowExperience(false);
+      setShowAbout(true);
+      setShowLeadership(false);
+    } else if (section === "leadership") {
+      setShowProjects(false);
+      setShowExperience(false);
+      setShowAbout(false);
+      setShowLeadership(true);
     }
   };
 
   const closePopup = () => {
     setShowProjects(false);
     setShowExperience(false);
+    setShowAbout(false);
+    setShowLeadership(false);
   };
 
   return (
     <section id="home" className="home">
       <div className="court-container">
+        <img
+          src={coach}
+          alt="Player Icon"
+          onClick={() => navigateTo("leadership")}
+          className="player-icon"
+          style={{
+            position: "absolute",
+            left: "-30px",
+            top: "190px",
+            width: "50px",
+            height: "50px",
+            cursor: "pointer",
+          }}
+        />
         <svg viewBox="0 0 200 300" className="basketball-court">
           <rect
             x="10"
@@ -127,13 +163,27 @@ function Home() {
             onClick={() => navigateTo("experience")}
             className="court-zone"
           />
+
+          {/* player icon */}
+          <image
+            href={icon}
+            x="45"
+            y="90"
+            width="30"
+            height="30"
+            onClick={() => navigateTo("about")}
+            className="player-icon"
+            style={{ cursor: "pointer" }}
+          />
         </svg>
         {/* Conditionally render the popups based on the state */}
         {showProjects && <ProjectsPopup />}
         {showExperience && <ExperiencePopup />}
+        {showAbout && <AboutPopup />}
+        {showLeadership && <LeadershipPopup />}
 
         {/* Close button for popups */}
-        {(showProjects || showExperience) && (
+        {(showProjects || showExperience || showAbout || showLeadership) && (
           <button onClick={closePopup}>Close</button>
         )}
       </div>

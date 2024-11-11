@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
-function AboutPopup() {
+function LeadershipPopup() {
   return (
     <div className="popup">
-      <h2>About Me!</h2>
+      <h2>Leadership</h2>
       {/**popup content */}
     </div>
   );
 }
 
-export default AboutPopup;
+export default LeadershipPopup;
