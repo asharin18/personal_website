@@ -9,6 +9,7 @@ import LeadershipPopup from "./Leadership";
 import "./popup.css";
 import icon from "../images/basketball-player.png";
 import coach from "../images/coach.png";
+import scoreboard from "../images/scoreboard.png";
 import Navbar from "./Navbar";
 
 function Home() {
@@ -189,6 +190,16 @@ function Home() {
         {(showProjects || showExperience || showAbout || showLeadership) && (
           <button onClick={closePopup}>Close</button>
         )}
+        {/* [TODO] fix resume link */}
+        <a
+          href="../../public/Amy_Sharin_Resume_site.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="scoreboard">
+            <img src={scoreboard} alt="Scoreboard" />
+          </div>
+        </a>
       </div>
     </section>
   );

@@ -4,30 +4,56 @@
   color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  /* background: url("../images/court-color.jpg") no-repeat center center; */
-  /* background: linear-gradient(
-      rgba(210, 180, 140, 0.7),
-      rgba(210, 180, 140, 0.7)
-    ),
-    url("../images/court-color.jpg") center/cover no-repeat;
-  background-size: cover; */
+  /* align-items: center; */
+  align-items: flex-start;
   background-color: tan;
-  /*note that the image isn't meant to be strentched like that*/
+  height: 120px;
 }
 
 .navbar ul {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .navbar a {
-  color: white;
+  color: #333;
   text-decoration: none;
   font-size: 1.2rem;
 }
 
 .navbar a:hover {
   color: #d05757;
+}
+
+.intro {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  max-width: 350px;
+}
+
+.intro p {
+  margin: 0;
+}
+
+.highlight {
+  color: #d05757;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1.5rem;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.icon-image {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  margin-right: 20px;
 }

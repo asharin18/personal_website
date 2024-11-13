@@ -10,31 +10,22 @@ function ExperiencePopup() {
       case "job1":
         return (
           <div>
-            <h3>Software Engineer at Company A</h3>
-            <p>
-              Developed efficient solutions to optimize client systems and
-              increase revenue.
-            </p>
+            <h3>title A</h3>
+            <p>text A</p>
           </div>
         );
       case "job2":
         return (
           <div>
-            <h3>Backend Developer at Company B</h3>
-            <p>
-              Implemented REST APIs to improve data accessibility for 50+
-              services.
-            </p>
+            <h3>title B</h3>
+            <p>text B</p>
           </div>
         );
       case "job3":
         return (
           <div>
-            <h3>Frontend Engineer at Company C</h3>
-            <p>
-              Built responsive web applications with a focus on user experience
-              and design.
-            </p>
+            <h3>title C</h3>
+            <p>text C</p>
           </div>
         );
       default:
