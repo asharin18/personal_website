@@ -192,7 +192,7 @@ function Home() {
         )}
         {/* [TODO] fix resume link */}
         <a
-          href="../../public/Amy_Sharin_Resume_site.pdf"
+          href={`${process.env.PUBLIC_URL}/Amy_Sharin_Resume_site.pdf`}
           target="_blank"
           rel="noopener noreferrer"
         >

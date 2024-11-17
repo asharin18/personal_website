@@ -1,48 +1,49 @@
 import React from "react";
-import "./ProjectsPopup.css"; // Make sure to create a separate CSS file for styling
+import "./ProjectsPopup.css";
+import chronomingle from "../images/chronomingle.png";
 
 function ProjectsPopup() {
   const projects = [
     {
-      title: "Project 1",
+      title: "Vroom Vroom",
+      description: "hereeeeee",
+      skills: ["C", "JavaScript", "Express.js"],
+      video: "https://www.youtube.com/embed/cpfzfa5NebU",
+      link: "https://pages.github.coecis.cornell.edu/ece3140-sp2023/ars369-lk543-ns597/",
+    },
+    {
+      title: "Chronomingle",
+      description: "Description of Project 3",
+      skills: ["Python", "JavaScript"],
+      image: chronomingle,
+      link: "https://github.com/youshraj/4300-Flask-Template-JSON",
+    },
+    {
+      title: "MCUdle",
       description:
         "long description test long description testlong description testlong description testlong description testlong description testlong description testlong description testlong description testlong description testlong description testv",
-      skills: ["React", "JavaScript", "CSS"],
+      skills: ["JavaScript", "CSS"],
       image: "link-to-project-image1.jpg",
       link: "https://example.com/project1",
     },
     {
-      title: "Project 2",
-      description: "Description of Project 2",
-      skills: ["Python", "Django", "SQL"],
-      image: "link-to-project-image2.jpg",
-      link: "https://example.com/project2",
-    },
-    {
-      title: "Project 3",
-      description: "Description of Project 3",
-      skills: ["Java", "Spring Boot", "MySQL"],
-      image: "link-to-project-image3.jpg",
-      link: "https://example.com/project3",
-    },
-    {
-      title: "Project 4",
+      title: "Vinyl Collection App",
       description: "Description of Project 4",
-      skills: ["HTML", "CSS", "JavaScript"],
+      skills: ["Python", "SQLAlchemy", "Flask", "Google Cloud"],
       image: "link-to-project-image4.jpg",
-      link: "https://example.com/project4",
+      link: "https://github.com/asharin18/vinyl_collection",
     },
     {
-      title: "Project 5",
+      title: "AI Recipe Generator",
       description: "Description of Project 5",
-      skills: ["Node.js", "Express", "MongoDB"],
+      skills: ["Python"],
       image: "link-to-project-image5.jpg",
       link: "https://example.com/project5",
     },
     {
-      title: "Project 6",
+      title: "Food Insecurity Data Visualization",
       description: "Description of Project 6",
-      skills: ["Flutter", "Dart", "Firebase"],
+      skills: ["JavaScript"],
       image: "link-to-project-image6.jpg",
       link: "https://example.com/project6",
     },
@@ -54,12 +55,23 @@ function ProjectsPopup() {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div className="project-box" key={index}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
             <h3>{project.title}</h3>
+            {project.video ? (
+              <iframe
+                src={project.video}
+                title={project.title}
+                width="100%"
+                height="200px"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+            ) : (
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+            )}
             <p>{project.description}</p>
             <div className="skills">
               {project.skills.map((skill, idx) => (

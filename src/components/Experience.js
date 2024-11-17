@@ -24,7 +24,7 @@ function ExperiencePopup() {
       case "job3":
         return (
           <div>
-            <h3>title C</h3>
+            <h3>Developer</h3>
             <p>text C</p>
           </div>
         );
@@ -35,7 +35,8 @@ function ExperiencePopup() {
 
   return (
     <div className="popup">
-      <h2>Experience</h2>
+      <h2>Defense: Problem Solving</h2>
+      <p></p>
 
       {/* Clickable divs for selecting the job */}
       <div className="experience-tabs">
@@ -55,7 +56,7 @@ function ExperiencePopup() {
           onClick={() => setActiveTab("job3")}
           className={`experience-tab ${activeTab === "job3" ? "active" : ""}`}
         >
-          Company C
+          WICC Technical Committee
         </div>
       </div>
 
