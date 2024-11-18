@@ -200,17 +200,26 @@ function Home() {
           <button onClick={closePopup}>Close</button>
         )}
         {hoveredSection && <div className="hover-label">{hoveredSection}</div>}
-        <a
-          href={`${process.env.PUBLIC_URL}/Amy_Sharin_Resume_site.pdf`}
-          target="_blank"
-          rel="noopener noreferrer"
-          onMouseEnter={() => setHoveredSection("Resume")}
-          onMouseLeave={() => setHoveredSection("")}
-        >
-          <div className="scoreboard">
-            <img src={scoreboard} alt="Scoreboard" />
+        <div>
+          <div className="rules-section">
+            <h2>Rules</h2>
+            <p>
+              Hover over different elements of the home page to discover various
+              sections. Click on each different component to learn more!
+            </p>
           </div>
-        </a>
+          <a
+            href={`${process.env.PUBLIC_URL}/Amy_Sharin_Resume_site.pdf`}
+            target="_blank"
+            rel="noopener noreferrer"
+            onMouseEnter={() => setHoveredSection("Resume")}
+            onMouseLeave={() => setHoveredSection("")}
+          >
+            <div className="scoreboard">
+              <img src={scoreboard} alt="Scoreboard" />
+            </div>
+          </a>
+        </div>
       </div>
     </section>
   );
