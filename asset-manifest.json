@@ -1,21 +1,26 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.edf17ead.css",
-    "main.js": "/personal_website/static/js/main.3f39b739.js",
+    "main.css": "/personal_website/static/css/main.53cf93e4.css",
+    "main.js": "/personal_website/static/js/main.97343571.js",
     "static/js/453.8415880a.chunk.js": "/personal_website/static/js/453.8415880a.chunk.js",
+    "static/media/techcomm.JPG": "/personal_website/static/media/techcomm.ece4fff3866c617d3f82.JPG",
     "static/media/chronomingle.png": "/personal_website/static/media/chronomingle.e28456ede57dc920cacb.png",
+    "static/media/chronomingle2.png": "/personal_website/static/media/chronomingle2.48bc8e60d00db10dc63c.png",
+    "static/media/hci.png": "/personal_website/static/media/hci.e9092b481d9cca1b2c3b.png",
+    "static/media/mcudle.png": "/personal_website/static/media/mcudle.1ddc5868160152ec72f3.png",
     "static/media/basketball-player.png": "/personal_website/static/media/basketball-player.7e318b50a67c6f4bbb44.png",
+    "static/media/floor.jpg": "/personal_website/static/media/floor.de7a5fcba94a42ddfcef.jpg",
     "static/media/github.png": "/personal_website/static/media/github.f11021803f68852df283.png",
     "static/media/email.png": "/personal_website/static/media/email.67bda94140af311d041f.png",
     "static/media/coach.png": "/personal_website/static/media/coach.d0ad36bd5b80330c1ef9.png",
     "static/media/linkedin.png": "/personal_website/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/personal_website/index.html",
-    "main.edf17ead.css.map": "/personal_website/static/css/main.edf17ead.css.map",
-    "main.3f39b739.js.map": "/personal_website/static/js/main.3f39b739.js.map",
+    "main.53cf93e4.css.map": "/personal_website/static/css/main.53cf93e4.css.map",
+    "main.97343571.js.map": "/personal_website/static/js/main.97343571.js.map",
     "453.8415880a.chunk.js.map": "/personal_website/static/js/453.8415880a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.edf17ead.css",
-    "static/js/main.3f39b739.js"
+    "static/css/main.53cf93e4.css",
+    "static/js/main.97343571.js"
   ]
 }
