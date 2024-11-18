@@ -17,6 +17,7 @@ function Home() {
   const [showExperience, setShowExperience] = useState(false);
   const [showAbout, setShowAbout] = useState(false);
   const [showLeadership, setShowLeadership] = useState(false);
+  const [hoveredSection, setHoveredSection] = useState("");
 
   const navigateTo = (section) => {
     if (section === "projects") {
@@ -58,6 +59,8 @@ function Home() {
           src={coach}
           alt="Player Icon"
           onClick={() => navigateTo("leadership")}
+          onMouseEnter={() => setHoveredSection("Leadership")}
+          onMouseLeave={() => setHoveredSection("")}
           className="player-icon"
           style={{
             position: "absolute",
@@ -155,6 +158,8 @@ function Home() {
             height="140"
             fill="transparent"
             onClick={() => navigateTo("projects")}
+            onMouseEnter={() => setHoveredSection("Projects")}
+            onMouseLeave={() => setHoveredSection("")}
             className="court-zone"
           />
 
@@ -165,6 +170,8 @@ function Home() {
             height="140"
             fill="transparent"
             onClick={() => navigateTo("experience")}
+            onMouseEnter={() => setHoveredSection("Experience")}
+            onMouseLeave={() => setHoveredSection("")}
             className="court-zone"
           />
 
@@ -176,6 +183,8 @@ function Home() {
             width="30"
             height="30"
             onClick={() => navigateTo("about")}
+            onMouseEnter={() => setHoveredSection("About Me")}
+            onMouseLeave={() => setHoveredSection("")}
             className="player-icon"
             style={{ cursor: "pointer" }}
           />
@@ -190,11 +199,13 @@ function Home() {
         {(showProjects || showExperience || showAbout || showLeadership) && (
           <button onClick={closePopup}>Close</button>
         )}
-        {/* [TODO] fix resume link */}
+        {hoveredSection && <div className="hover-label">{hoveredSection}</div>}
         <a
           href={`${process.env.PUBLIC_URL}/Amy_Sharin_Resume_site.pdf`}
           target="_blank"
           rel="noopener noreferrer"
+          onMouseEnter={() => setHoveredSection("Resume")}
+          onMouseLeave={() => setHoveredSection("")}
         >
           <div className="scoreboard">
             <img src={scoreboard} alt="Scoreboard" />

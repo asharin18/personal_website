@@ -1,21 +1,16 @@
+/* General styles */
 .home {
   text-align: center;
-  /* padding: 1rem; */
   background-color: #f7f7f7;
 }
 
 .court-container {
-  /* margin-top: 0.5rem;
-  position: relative;
-  max-width: 400px;
-  margin-left: auto;
-  margin-right: auto; */
   max-width: 600px;
-  margin-left: 475px;
-
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Default layout for smaller screens */
   gap: 3rem;
   position: relative;
 }
@@ -23,6 +18,10 @@
 .basketball-court {
   width: 100%;
   height: auto;
+}
+
+.scoreboard {
+  margin-top: 1rem;
 }
 
 .court-zone {
@@ -33,15 +32,28 @@
   fill: rgba(255, 183, 3, 0.2); /* Highlight on hover */
 }
 
-.player-icon {
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.hover-label {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d05757;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
-.player-icon:hover {
-  opacity: 0.7;
+/* Styles for larger screens */
+@media screen and (min-width: 768px) {
+  .court-container {
+    flex-direction: row; /* Side-by-side layout for larger screens */
+  }
+
+  .scoreboard {
+    margin-top: 0;
+  }
 }
-
-/* .scoreboard {
-
-} */

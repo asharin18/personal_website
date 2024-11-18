@@ -11,17 +11,6 @@ function Navbar({ navigateTo }) {
       <ul>
         <li>
           <a
-            href="#home"
-            onClick={(e) => {
-              e.preventDefault(); // Prevent default anchor behavior
-              navigateTo("projects"); // Trigger the Projects popup
-            }}
-          >
-            Home
-          </a>
-        </li>
-        <li>
-          <a
             href="#projects"
             onClick={(e) => {
               e.preventDefault(); // Prevent default anchor behavior
@@ -51,6 +40,17 @@ function Navbar({ navigateTo }) {
             }}
           >
             About
+          </a>
+        </li>
+        <li>
+          <a
+            href="#leadership"
+            onClick={(e) => {
+              e.preventDefault();
+              navigateTo("leadership");
+            }}
+          >
+            Leadership
           </a>
         </li>
       </ul>

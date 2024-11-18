@@ -10,15 +10,15 @@ function LeadershipPopup() {
       case "job1":
         return (
           <div>
-            <h3>title A</h3>
-            <p>text A</p>
+            <h3>Battery Omega Subteam Lead</h3>
+            <p>TODO</p>
           </div>
         );
       case "job2":
         return (
           <div>
-            <h3>title B</h3>
-            <p>text B</p>
+            <h3>Mentor</h3>
+            <p>TODO</p>
           </div>
         );
 
@@ -43,7 +43,7 @@ function LeadershipPopup() {
           onClick={() => setActiveTab("job1")}
           className={`experience-tab ${activeTab === "job1" ? "active" : ""}`}
         >
-          ChemE Car Cornell
+          ChemE Car
         </div>
         <div
           onClick={() => setActiveTab("job2")}
