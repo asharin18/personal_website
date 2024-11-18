@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.53cf93e4.css",
-    "main.js": "/personal_website/static/js/main.97343571.js",
+    "main.css": "/personal_website/static/css/main.f5c39980.css",
+    "main.js": "/personal_website/static/js/main.242587f0.js",
     "static/js/453.8415880a.chunk.js": "/personal_website/static/js/453.8415880a.chunk.js",
     "static/media/techcomm.JPG": "/personal_website/static/media/techcomm.ece4fff3866c617d3f82.JPG",
     "static/media/chronomingle.png": "/personal_website/static/media/chronomingle.e28456ede57dc920cacb.png",
@@ -15,12 +15,12 @@
     "static/media/coach.png": "/personal_website/static/media/coach.d0ad36bd5b80330c1ef9.png",
     "static/media/linkedin.png": "/personal_website/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/personal_website/index.html",
-    "main.53cf93e4.css.map": "/personal_website/static/css/main.53cf93e4.css.map",
-    "main.97343571.js.map": "/personal_website/static/js/main.97343571.js.map",
+    "main.f5c39980.css.map": "/personal_website/static/css/main.f5c39980.css.map",
+    "main.242587f0.js.map": "/personal_website/static/js/main.242587f0.js.map",
     "453.8415880a.chunk.js.map": "/personal_website/static/js/453.8415880a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53cf93e4.css",
-    "static/js/main.97343571.js"
+    "static/css/main.f5c39980.css",
+    "static/js/main.242587f0.js"
   ]
 }
