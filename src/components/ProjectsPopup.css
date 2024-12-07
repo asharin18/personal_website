@@ -13,16 +13,99 @@
     overflow: auto;
   } */
 
+/* .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px;
+  max-width: 800px;
+  max-height: 80vh;
+  overflow-y: auto;
+  background: #faf9f6;
+  padding: 20px;
+  border-radius: 8px;
+} */
+
+/* .project-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.project-box h3 {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project-box p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.skills {
+  margin-top: 15px;
+}
+
+.skill-bubble {
+  display: inline-block;
+  background-color: #d05757;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #d05757;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.project-link:hover {
+  background-color: tan;
+} */
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh; /* Restrict height to fit within the viewport */
+  overflow: hidden; /* Ensure no content spills out */
+  background-color: #faf9f6;
+  border: 2px solid #333;
+  border-radius: 8px;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
   gap: 20px;
-  max-width: 800px;
-  max-height: 80vh;
-  overflow-y: auto; /* Make the popup scrollable */
-  background: #faf9f6;
-  padding: 20px;
-  border-radius: 8px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: calc(100% - 80px); /* Adjust for padding or other content above */
+  padding-right: 10px; /* Ensure scrollbar doesn’t overlap content */
 }
 
 .project-box {

@@ -27,7 +27,8 @@ function ProjectsPopup() {
     },
     {
       title: "MCUdle",
-      description: "[TODO]",
+      description:
+        "Created a Marvel themed version of wordle as an independant project to teach myself web development basics. I designed and implemented the game interface using HTML, CSS, and JavaScript, incorporating Marvel characters and terms as the word bank. Utalized an API to determine if user guesses were dictionary words. This project increased my understanding of frontend development and DOM manipulation.",
       skills: ["JavaScript", "CSS"],
       image: mcudle,
       link: "https://github.com/asharin18/MCUdle",

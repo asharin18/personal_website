@@ -189,15 +189,30 @@ function Home() {
             style={{ cursor: "pointer" }}
           />
         </svg>
-        {/* Conditionally render the popups based on the state */}
-        {showProjects && <ProjectsPopup />}
-        {showExperience && <ExperiencePopup />}
-        {showAbout && <AboutPopup />}
-        {showLeadership && <LeadershipPopup />}
 
-        {/* Close button for popups */}
-        {(showProjects || showExperience || showAbout || showLeadership) && (
-          <button onClick={closePopup}>Close</button>
+        {showProjects && (
+          <div className="popup">
+            <button onClick={closePopup}>Close</button>
+            <ProjectsPopup />
+          </div>
+        )}
+        {showExperience && (
+          <div className="popup">
+            <button onClick={closePopup}>Close</button>
+            <ExperiencePopup />
+          </div>
+        )}
+        {showAbout && (
+          <div className="popup">
+            <button onClick={closePopup}>Close</button>
+            <AboutPopup />
+          </div>
+        )}
+        {showLeadership && (
+          <div className="popup">
+            <button onClick={closePopup}>Close</button>
+            <LeadershipPopup />
+          </div>
         )}
         {hoveredSection && <div className="hover-label">{hoveredSection}</div>}
         <div>

@@ -1,0 +1,38 @@
+.about-content {
+  font-size: 16px;
+  color: #333;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.about-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 90px;
+  margin-top: 20px;
+}
+
+.headshot {
+  width: 325px;
+  height: 325px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #d05757;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 15px; /* Space between images */
+}
+
+.stack-image {
+  max-width: 120px;
+  height: auto; /* Adjusts height based on image aspect ratio */
+  object-fit: contain; /* Ensures full image is visible without cropping */
+  border-radius: 8px;
+}
