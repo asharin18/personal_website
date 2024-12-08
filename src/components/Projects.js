@@ -4,6 +4,8 @@ import chronomingle from "../images/chronomingle.png";
 import chronomingle2 from "../images/chronomingle2.png";
 import mcudle from "../images/mcudle.png";
 import hci from "../images/hci.png";
+import map3300 from "../images/3300-map.png";
+import graph3300 from "../images/3300-1.png";
 
 function ProjectsPopup() {
   const projects = [
@@ -46,13 +48,15 @@ function ProjectsPopup() {
       description: "Project in Progress",
       skills: ["Python"],
       image: "link-to-project-image5.jpg",
-      link: "https://example.com/project5",
     },
     {
-      title: "Food Insecurity Data Visualization",
-      description: "Project in Progress",
-      skills: ["JavaScript"],
-      image: "link-to-project-image6.jpg",
+      title:
+        "Global Trends in Economic, Equity, and Health Indicators Over Time",
+      description:
+        "As part of a team, for ‘CS3300: Visual Data Analytics for the Web’, I created an interactive web visualization to explore global trends in economic, health, and equity indicators from 1960-2016. By integrating data from sources like the World Bank API and US Food Prices dataset, we highlighted disparities and correlations across countries. Users can select countries of interest on an interactive map, view indicator trends over time, and filter data by specific time periods. Key features include dropdown menus for selecting indicators, a correlation tool to quantify relationships (GDP vs. population in the United States as seen above), and a timeline slider for focused analysis. The design prioritizes both intuitive exploration and clear trend identification.",
+      skills: ["JavaScript", "Data Visualization"],
+      image: map3300,
+      image2: graph3300,
       link: "https://github.coecis.cornell.edu/ars369/3300-P2",
     },
   ];
@@ -102,14 +106,16 @@ function ProjectsPopup() {
                 </span>
               ))}
             </div>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-            >
-              View Project
-            </a>
+            {project.link && (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                View Project
+              </a>
+            )}
           </div>
         ))}
       </div>
