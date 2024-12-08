@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.2497c54a.css",
-    "main.js": "/personal_website/static/js/main.c75ed541.js",
+    "main.css": "/personal_website/static/css/main.ab11a1a6.css",
+    "main.js": "/personal_website/static/js/main.d7ab529b.js",
     "static/js/453.8415880a.chunk.js": "/personal_website/static/js/453.8415880a.chunk.js",
     "static/media/techcomm.JPG": "/personal_website/static/media/techcomm.ece4fff3866c617d3f82.JPG",
     "static/media/headshot.JPG": "/personal_website/static/media/headshot.dd01d0aff39dabae7589.JPG",
     "static/media/carousel2.jpg": "/personal_website/static/media/carousel2.2a78d9b175c33ffa42cb.jpg",
+    "static/media/carousel4.jpg": "/personal_website/static/media/carousel4.71408a0fac47f8dadbf1.jpg",
     "static/media/carousel3.jpg": "/personal_website/static/media/carousel3.d09960a7381f6b683d5f.jpg",
     "static/media/carousel1.jpg": "/personal_website/static/media/carousel1.d6cdd5a96b88407c050d.jpg",
     "static/media/chemegroup.jpg": "/personal_website/static/media/chemegroup.89a2f2f53691293f8cd7.jpg",
@@ -24,12 +25,12 @@
     "static/media/coach.png": "/personal_website/static/media/coach.d0ad36bd5b80330c1ef9.png",
     "static/media/linkedin.png": "/personal_website/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/personal_website/index.html",
-    "main.2497c54a.css.map": "/personal_website/static/css/main.2497c54a.css.map",
-    "main.c75ed541.js.map": "/personal_website/static/js/main.c75ed541.js.map",
+    "main.ab11a1a6.css.map": "/personal_website/static/css/main.ab11a1a6.css.map",
+    "main.d7ab529b.js.map": "/personal_website/static/js/main.d7ab529b.js.map",
     "453.8415880a.chunk.js.map": "/personal_website/static/js/453.8415880a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2497c54a.css",
-    "static/js/main.c75ed541.js"
+    "static/css/main.ab11a1a6.css",
+    "static/js/main.d7ab529b.js"
   ]
 }
