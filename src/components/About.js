@@ -4,7 +4,7 @@ import headshot from "../images/headshot.JPG";
 import carouselImg1 from "../images/carousel1.jpg";
 import carouselImg2 from "../images/carousel2.jpg";
 import carouselImg3 from "../images/carousel3.jpg";
-import carouselImg4 from "../images/carousel3.jpg"; // todo
+import carouselImg4 from "../images/carousel4.jpg";
 
 function AboutPopup() {
   return (

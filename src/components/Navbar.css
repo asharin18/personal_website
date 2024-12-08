@@ -57,3 +57,69 @@
   height: 30px;
   cursor: pointer;
 }
+
+.hamburger-menu {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.navbar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.navbar-menu.close {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.navbar-menu.open {
+  display: flex; /* Display on toggle */
+  flex-direction: column; /* Stack links vertically */
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: auto; /* Allow navbar height to adjust */
+    padding: 1rem;
+    flex-direction: column; /* Stack everything vertically */
+  }
+
+  .navbar-header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hamburger-menu {
+    display: block; /* Show hamburger on mobile */
+  }
+
+  .navbar-menu.close {
+    display: none; /* Hide the menu by default on mobile */
+    visibility: hidden; /* This ensures it doesn't take up space */
+  }
+
+  .intro {
+    margin-top: 5rem;
+    position: relative; /* Remove absolute positioning */
+    text-align: center;
+    /* background-image: url("../images/floor.jpg"); */
+    padding: 0rem;
+    border-radius: 8px;
+    color: #333;
+  }
+
+  .icon-image {
+    width: 25px;
+    height: 25px;
+  }
+}
