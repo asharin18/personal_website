@@ -12,11 +12,20 @@ function AboutPopup() {
       <h2>About Me!</h2>
       <div className="about-content">
         <p>
-          I’m Amy Sharin, a senior studying computer science at Cornell
-          University, originally from Long Island, New York. I’m interested in
-          developing impactful software that work to make a positive impact to
-          improve people’s lives. Outside of work, my interests include watching
-          and playing sports, and baking!
+          I’m Amy Sharin, a senior studying Computer Science at Cornell
+          University. I'm originally from Long Island, New York. Throughout my
+          education, I have strived to be an all-around player in computer
+          science, exploring various disciplines, from software engineering to
+          machine learning, data visualization, and web development. My diverse,
+          all-around skill set allows me to approach problems from different
+          angles and create innovative solutions. <br /> <br />
+          Just as basketball is a team sport that thrives on collaboration, I
+          excel in team environments where shared ideas and different
+          perspectives lead to the best results. Whether it’s working on group
+          projects at Cornell or contributing to my team during my Comcast
+          internship, I bring a collaborative spirit that helps deliver winning
+          results. <br /> <br /> Outside of coding, my interests include
+          watching and playing sports, as well as baking!
         </p>
         <div className="about-media">
           <img src={headshot} alt="Headshot" className="headshot" />
