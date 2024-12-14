@@ -22,21 +22,30 @@ function ExperiencePopup() {
               )}
             </div>
             <p>
-              I spent two summers interning at Comcast, where I worked on the
-              internal alerts team for the 10G network in an agile development
-              environment. For the summer of 2024, I had the opportunity to
-              innovate ideas for various network signals and automate their
-              integration into a data service using AWS Step Functions. I also
-              contributed by building Java GraphQL resolvers and schemas to
-              deliver device status updates. I also enhanced API security by
-              introducing new scopes and queries, which helped prevent
-              unauthorized access. During the summer of 2023, I utilized AWS
-              Glue to analyze alert data and populate an AWS TimeStream table. I
-              then created a Grafana time series dashboard to help improve
-              data-driven decision-making. Additionally, I developed a
-              Python-based Lambda for Slack messaging to handle rate limits, and
-              optimized the CI/CD pipeline, resulting in time savings of up to
-              30% per deployment.
+              I spent two summers interning at Comcast, where I contributed to
+              the internal alerts team. Through this experience, I honed my
+              problem-solving abilities by tackling a wide range of tasks and
+              leveraging diverse technologies, while collaborating in an agile
+              environment. Presenting projects further strengthened my
+              communication skills, enabling me to convey crucial information
+              effectively. Below are a few highlights from my experience:
+              <ul>
+                <li>
+                  <strong>Analyzed and Visualized Alert Data:</strong> Utilized
+                  AWS Glue to analyze alert data, enriched AWS TimeStream table,
+                  and translated insights into a Grafana time series dashboard,
+                  enhancing data-driven decision-making
+                </li>
+                <li>
+                  <strong>Automated 10G Network Signals:</strong> Innovated 10G
+                  network signal ideas and automated their integration to a data
+                  service via AWS Step Function
+                </li>
+                <li>
+                  <strong>Strengthened API Security:</strong> Implemented new
+                  scopes and queries, effectively preventing unauthorized access
+                </li>
+              </ul>
             </p>
           </div>
         );
@@ -44,7 +53,16 @@ function ExperiencePopup() {
         return (
           <div>
             <h3>Consultant</h3>
-            <p>Object Oriented Programming and Data Structures</p>
+            <p>
+              I served as a consultant for the{" "}
+              <strong>Object-Oriented Programming and Data Structures</strong>{" "}
+              course at Cornell for four semesters, which was an incredibly
+              rewarding experience. This role deepened my technical expertise on
+              the subject manner and refined my ability to explain complex
+              concepts in simple, digestible terms. Whether guiding students
+              through debugging challenges or preparing them for exams, I
+              developed strong communication and problem-solving skills.{" "}
+            </p>
             <ul>
               <li>
                 Conducted 250+ office hours over four semesters, assisting
@@ -52,7 +70,8 @@ function ExperiencePopup() {
               </li>
               <li>
                 Collaborated in grading assignments and exams of over 700
-                students in the course.
+                students in the course, ensuring fair and consistent
+                evaluations.
               </li>
             </ul>
           </div>
@@ -68,15 +87,17 @@ function ExperiencePopup() {
                 </span>
               ))}
             </div>
-            <p>
-              I collaborated with a team of designers to update and maintain the
-              React-based Women In Computing at Cornell website, focusing on
-              enhancing the user experience and ensuring mobile responsiveness.
-              I also helped run a workshop where we guided others through
-              creating their own personal websites and developing their personal
-              branding.{" "}
-            </p>
-            <img src={techComm} alt="GroupPhoto" className="wicc-img" />
+            <div className="wicc-container">
+              <p>
+                I collaborated with a team of designers to update and maintain
+                the React-based Women In Computing at Cornell website, focusing
+                on enhancing the user experience and ensuring mobile
+                responsiveness. I also helped run a workshop where we guided
+                attendees through creating their own personal websites from
+                scratch and developing their personal brand.{" "}
+              </p>
+              <img src={techComm} alt="GroupPhoto" className="wicc-img" />
+            </div>
           </div>
         );
       default:
