@@ -68,7 +68,7 @@ function ProjectsPopup() {
   ];
 
   return (
-    <div className="popup">
+    <div className="popup-extras">
       <h2>Offense: Projects</h2>
       <p>
         In basketball, offense is about teamwork, versatility, and making the

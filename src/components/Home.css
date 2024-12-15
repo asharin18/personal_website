@@ -30,7 +30,7 @@
 }
 
 .court-zone:hover {
-  fill: rgba(255, 183, 3, 0.2); /* Highlight on hover */
+  fill: rgba(255, 183, 3, 0.2);
 }
 
 .hover-label {
@@ -67,6 +67,15 @@
   margin-top: 0px;
 }
 
+.player-icon {
+  position: absolute;
+  left: -3%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 768px) {
   .court-container {
@@ -75,5 +84,20 @@
 
   .scoreboard {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .player-icon {
+    left: 9%;
+    top: 35%;
+    width: 60px;
+    height: 60px;
+  }
+  .rules-section {
+    margin-top: 0px;
+  }
+  .court-container {
+    gap: 0rem;
   }
 }

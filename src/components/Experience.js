@@ -106,7 +106,7 @@ function ExperiencePopup() {
   };
 
   return (
-    <div className="popup">
+    <div>
       <h2>Defense: Problem Solving</h2>
       <p>
         Defense is about anticipation, resiliance, and working together. It’s

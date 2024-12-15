@@ -1,19 +1,19 @@
-.popup {
+.popup-extras {
+  overflow: hidden;
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+  width: 100%;
   max-width: 800px;
-  max-height: 90vh; /* Restrict height to fit within the viewport */
-  overflow: hidden; /* Ensure no content spills out */
-  /* overflow-y: auto; */
+  height: 500px;
+  /* max-height: 90vh; */
+  transform: translate(-50%, -50%);
   background-color: #faf9f6;
-  border: 2px solid #333;
-  border-radius: 8px;
-  z-index: 1000;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  border: 2px solid #333;
+  z-index: 1000;
+  /* overflow-y: auto; */
+  /* box-sizing: border-box; */
 }
 
 .projects-grid {
@@ -82,4 +82,27 @@
 
 .project-link:hover {
   background-color: tan;
+}
+
+@media (max-width: 768px) {
+  .popup-extras {
+    width: 90%;
+  }
+  .projects-grid {
+    grid-template-columns: 1fr; /* One box per row on small screens */
+    gap: 15px;
+    max-height: calc(100% - 215px);
+  }
+
+  .project-box {
+    padding: 15px;
+  }
+
+  .project-box h3 {
+    font-size: 1rem;
+  }
+
+  .project-box p {
+    font-size: 0.8rem;
+  }
 }

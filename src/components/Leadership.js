@@ -69,7 +69,7 @@ function LeadershipPopup() {
   };
 
   return (
-    <div className="popup">
+    <div>
       <h2>Coach: Leadership</h2>
       <p>
         A basketball team can't be successful without a great coach to inspire

@@ -8,7 +8,7 @@ import carouselImg4 from "../images/carousel4.jpg";
 
 function AboutPopup() {
   return (
-    <div className="popup">
+    <div>
       <h2>About Me!</h2>
       <div className="about-content">
         <p>

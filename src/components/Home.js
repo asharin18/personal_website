@@ -1,7 +1,7 @@
 // src/components/Home.js
 import React from "react";
 import "./Home.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ProjectsPopup from "./Projects";
 import ExperiencePopup from "./Experience";
 import AboutPopup from "./About";
@@ -18,6 +18,32 @@ function Home() {
   const [showAbout, setShowAbout] = useState(false);
   const [showLeadership, setShowLeadership] = useState(false);
   const [hoveredSection, setHoveredSection] = useState("");
+  const [rulesText, setRulesText] = useState(
+    "Hover over different elements of the home page to discover various sections. Click on each component to learn more!"
+  );
+
+  useEffect(() => {
+    const updateRulesText = () => {
+      if (window.innerWidth <= 768) {
+        setRulesText(
+          "Tap on different elements of the home page to discover various sections! Tap the top half of the court to learn more about my projects, tap the bottom half of the court to learn more about my experience, tap the coach to learn more about my leadership experience, and tap the player to learn more about me! Also, you can tap the scoreboard to view my resume."
+        );
+      } else {
+        setRulesText(
+          "Hover over different elements of the home page to discover various sections. Click on each component to learn more!"
+        );
+      }
+    };
+
+    // Call on initial load
+    updateRulesText();
+
+    // Add event listener for window resize
+    window.addEventListener("resize", updateRulesText);
+
+    // Clean up the event listener
+    return () => window.removeEventListener("resize", updateRulesText);
+  }, []);
 
   const navigateTo = (section) => {
     if (section === "projects") {
@@ -62,14 +88,6 @@ function Home() {
           onMouseEnter={() => setHoveredSection("Leadership")}
           onMouseLeave={() => setHoveredSection("")}
           className="player-icon"
-          style={{
-            position: "absolute",
-            left: "-30px",
-            top: "190px",
-            width: "50px",
-            height: "50px",
-            cursor: "pointer",
-          }}
         />
         <svg viewBox="0 0 200 300" className="basketball-court">
           <rect
@@ -185,7 +203,7 @@ function Home() {
             onClick={() => navigateTo("about")}
             onMouseEnter={() => setHoveredSection("About Me")}
             onMouseLeave={() => setHoveredSection("")}
-            className="player-icon"
+            // className="player-icon"
             style={{ cursor: "pointer" }}
           />
         </svg>
@@ -218,10 +236,7 @@ function Home() {
         <div>
           <div className="rules-section">
             <h2>Rules</h2>
-            <p>
-              Hover over different elements of the home page to discover various
-              sections. Click on each different component to learn more!
-            </p>
+            <p>{rulesText}</p>
           </div>
           <a
             href={`${process.env.PUBLIC_URL}/Amy_Sharin_Resume_site.pdf`}

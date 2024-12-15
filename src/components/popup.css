@@ -2,14 +2,24 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
+  /* height: auto; */
   height: 500px;
+  /* max-height: 90vh; */
   transform: translate(-50%, -50%);
   background-color: #faf9f6;
   padding: 20px;
   border: 2px solid #333;
+  border-radius: 5px;
   z-index: 1000;
+  /* overflow-y: auto; */
+  /* box-sizing: border-box; */
 }
+
+/* body.no-scroll {
+  overflow: hidden;
+} */
 
 .popup button {
   position: absolute;
@@ -23,4 +33,20 @@
   border-radius: 5px;
   font-size: 14px;
   z-index: 1100; /* Places the button above the popup content */
+}
+
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 90%; /* Take up most of the screen width */
+    padding: 10px; /* Reduce padding for smaller screens */
+    font-size: 14px; /* Optional: reduce font size for compactness */
+    overflow-y: auto;
+  }
+
+  .popup button {
+    top: 5px;
+    right: 5px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
 }
