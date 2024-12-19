@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/personal_website/static/css/main.fbb199c0.css",
-    "main.js": "/personal_website/static/js/main.7d0b3465.js",
+    "main.css": "/personal_website/static/css/main.2f1cb00a.css",
+    "main.js": "/personal_website/static/js/main.0c758d4d.js",
     "static/js/453.8415880a.chunk.js": "/personal_website/static/js/453.8415880a.chunk.js",
     "static/media/techcomm.JPG": "/personal_website/static/media/techcomm.ece4fff3866c617d3f82.JPG",
     "static/media/headshot.JPG": "/personal_website/static/media/headshot.dd01d0aff39dabae7589.JPG",
@@ -17,6 +17,7 @@
     "static/media/wicclogo.png": "/personal_website/static/media/wicclogo.dce85504b58e73d42ea1.png",
     "static/media/3300-1.png": "/personal_website/static/media/3300-1.2f16e29c86f942f949ed.png",
     "static/media/hci.png": "/personal_website/static/media/hci.e9092b481d9cca1b2c3b.png",
+    "static/media/ai_recipe.png": "/personal_website/static/media/ai_recipe.482c4946183c5ed1c7f9.png",
     "static/media/mcudle.png": "/personal_website/static/media/mcudle.1ddc5868160152ec72f3.png",
     "static/media/basketball-player.png": "/personal_website/static/media/basketball-player.7e318b50a67c6f4bbb44.png",
     "static/media/floor.jpg": "/personal_website/static/media/floor.de7a5fcba94a42ddfcef.jpg",
@@ -25,12 +26,12 @@
     "static/media/coach.png": "/personal_website/static/media/coach.d0ad36bd5b80330c1ef9.png",
     "static/media/linkedin.png": "/personal_website/static/media/linkedin.032cf8a63be2f0f4d425.png",
     "index.html": "/personal_website/index.html",
-    "main.fbb199c0.css.map": "/personal_website/static/css/main.fbb199c0.css.map",
-    "main.7d0b3465.js.map": "/personal_website/static/js/main.7d0b3465.js.map",
+    "main.2f1cb00a.css.map": "/personal_website/static/css/main.2f1cb00a.css.map",
+    "main.0c758d4d.js.map": "/personal_website/static/js/main.0c758d4d.js.map",
     "453.8415880a.chunk.js.map": "/personal_website/static/js/453.8415880a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbb199c0.css",
-    "static/js/main.7d0b3465.js"
+    "static/css/main.2f1cb00a.css",
+    "static/js/main.0c758d4d.js"
   ]
 }
