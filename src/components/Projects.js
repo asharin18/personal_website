@@ -7,6 +7,7 @@ import hci from "../images/hci.png";
 import map3300 from "../images/3300-map.png";
 import graph3300 from "../images/3300-1.png";
 import collab from "../images/collab.png";
+import aiRecipe from "../images/ai_recipe.png";
 
 function ProjectsPopup() {
   const projects = [
@@ -50,9 +51,10 @@ function ProjectsPopup() {
     },
     {
       title: "AI Recipe Generator",
-      description: "Project in Progress",
+      description:
+        "For this project, I worked in a team to develop an AI-powered recipe generator that suggests recipes based on user-provided ingredients while adhering to specified dietary restrictions such as gluten-free, dairy-free, vegetarian, and nut-free. I worked through the full machine learning pipeline, from data preprocessing and model training to evaluation and testing. We developed two models: one using decision trees for text generation, and another utilizing TF-IDF for feature extraction along with a multi-output classifier to predict dietary restrictions. I learned about the trade-offs between different approaches and the challenges of creating a functional model that produced valid and relevant outputs.",
       skills: ["Python"],
-      image: "link-to-project-image5.jpg",
+      image: aiRecipe,
       collaborative: true,
     },
     {
@@ -98,7 +100,7 @@ function ProjectsPopup() {
                 src={project.video}
                 title={project.title}
                 width="100%"
-                height="200px"
+                height="300px;"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
